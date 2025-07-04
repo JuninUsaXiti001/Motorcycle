@@ -1,5 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .upper-navbar {
     height: 5px;
     width: 100%;
-    background-color: firebrick;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+}
+
+.nav-logo {
+    background: #000;
+    position: absolute;
+    width: 30%;
+    max-width: 261px;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.nav-logo-img {
+    margin-top: 20px;
+    object-fit: contain;
+    max-width: 200px;
+    width: 80%;   
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+    }
 }
